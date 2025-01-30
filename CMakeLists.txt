@@ -7,6 +7,7 @@ include(FetchContent)
 
 FetchContent_Declare(SFML
         GIT_REPOSITORY https://github.com/SFML/SFML.git
+
         GIT_TAG 2.5.1
         GIT_SHALLOW ON
         EXCLUDE_FROM_ALL
@@ -20,6 +21,8 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(fmt SFML)
 
-add_executable(Giera_v1 main.cpp)
+add_executable(Giera_v1 main.cpp
+        main.cpp
+        main.cpp)
 target_compile_features(Giera_v1 PRIVATE cxx_std_20)
 target_link_libraries(Giera_v1 PRIVATE sfml-graphics sfml-window sfml-system fmt::fmt)

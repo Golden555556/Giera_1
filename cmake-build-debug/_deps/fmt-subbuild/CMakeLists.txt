@@ -18,18 +18,18 @@ project(fmt-populate NONE)
 
 # Pass through things we've already detected in the main project to avoid
 # paying the cost of redetecting them again in ExternalProject_Add()
-set(GIT_EXECUTABLE [==[D:/Git/cmd/git.exe]==])
-set(GIT_VERSION_STRING [==[2.46.2.windows.1]==])
+set(GIT_EXECUTABLE [==[C:/Program Files/Git/cmd/git.exe]==])
+set(GIT_VERSION_STRING [==[2.47.0.windows.2]==])
 set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
-  [==[D:/Git/cmd/git.exe;2.46.2.windows.1]==]
+  [==[C:/Program Files/Git/cmd/git.exe;2.47.0.windows.2]==]
 )
 
 
 include(ExternalProject)
 ExternalProject_Add(fmt-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/fmtlib/fmt" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "11.0.2"
-                    SOURCE_DIR          "D:/GitHub/Giera_v1/cmake-build-debug/_deps/fmt-src"
-                    BINARY_DIR          "D:/GitHub/Giera_v1/cmake-build-debug/_deps/fmt-build"
+                    SOURCE_DIR          "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-debug/_deps/fmt-src"
+                    BINARY_DIR          "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-debug/_deps/fmt-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

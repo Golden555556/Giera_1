@@ -1,39 +1,13 @@
-"D:\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=D:/CLion 2024.2.2/bin/ninja/win/x64/ninja.exe" -G Ninja -S D:\GitHub\Giera_v1 -B D:\GitHub\Giera_v1\cmake-build-debug
--- {fmt} version: 11.0.2
--- Build type: Debug
-CMake Deprecation Warning at cmake-build-debug/_deps/sfml-src/CMakeLists.txt:5 (cmake_minimum_required):
-  Compatibility with CMake < 3.5 will be removed from a future version of
-  CMake.
+"C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" -S C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1 -B C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\cmake-build-debug
+CMake Error: The current CMakeCache.txt directory C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-debug/_deps/fmt-subbuild/CMakeCache.txt is different than the directory d:/GitHub/Giera_v1/cmake-build-debug/_deps/fmt-subbuild where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
 
-  Update the VERSION argument <min> value or use a ...<max> suffix to tell
-  CMake that the project does not need compatibility with older versions.
-
-
--- Looking for sys/types.h
--- Looking for sys/types.h - found
--- Looking for stdint.h
--- Looking for stdint.h - found
--- Looking for stddef.h
--- Looking for stddef.h - found
--- Check size of void*
--- Check size of void* - done
--- Found OpenGL: opengl32
--- Looking for dinput.h
--- Looking for dinput.h - found
--- Found OpenAL: D:/GitHub/Giera_v1/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libopenal32.a
-CMake Warning (dev) at D:/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
-  The package name passed to `find_package_handle_standard_args` (VORBIS)
-  does not match the name of the calling package (Vorbis).  This can lead to
-  problems in calling code that expects `find_package` result variables
-  (e.g., `_FOUND`) to follow a certain pattern.
+CMake Error at C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent.cmake:1702 (message):
+  CMake step for fmt failed: 1
 Call Stack (most recent call first):
-  cmake-build-debug/_deps/sfml-src/cmake/Modules/FindVorbis.cmake:25 (find_package_handle_standard_args)
-  cmake-build-debug/_deps/sfml-src/cmake/Macros.cmake:279 (find_package)
-  cmake-build-debug/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
-This warning is for project developers.  Use -Wno-dev to suppress it.
+  C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent.cmake:1854:EVAL:2 (__FetchContent_directPopulate)
+  C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent.cmake:1854 (cmake_language)
+  C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FetchContent.cmake:2081 (FetchContent_Populate)
+  CMakeLists.txt:21 (FetchContent_MakeAvailable)
 
--- Found VORBIS: D:/GitHub/Giera_v1/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbisenc.a;D:/GitHub/Giera_v1/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbisfile.a;D:/GitHub/Giera_v1/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbis.a;D:/GitHub/Giera_v1/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libogg.a
--- Found FLAC: D:/GitHub/Giera_v1/cmake-build-debug/_deps/sfml-src/extlibs/libs-mingw/x64/libFLAC.a
--- Configuring done (16.0s)
--- Generating done (0.1s)
--- Build files have been written to: D:/GitHub/Giera_v1/cmake-build-debug
+
+-- Configuring incomplete, errors occurred!
