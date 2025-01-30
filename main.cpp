@@ -10,19 +10,24 @@ int main() {
     settings.antialiasingLevel = 16;
     sf::RenderWindow window(sf::VideoMode(800,600), "RPG GAME", sf::Style::Default, settings);
 
-    sf::CircleShape triangle(50.f,3);
-    triangle.setFillColor(sf::Color::Red);
-    triangle.setOutlineThickness(10.f);
-    triangle.setOutlineColor(sf::Color::White);
-    triangle.setPosition(sf::Vector2f(100,100));
 
-    sf::CircleShape octagon(50.f, 8);
-    octagon.setFillColor(sf::Color::Blue);
-    octagon.setOutlineThickness(8.f);
-    octagon.setOutlineColor(sf::Color::Green);
-    octagon.setPosition(sf::Vector2f(100,100));
 
     //--------------------------------------------INTIALIZE--------------------------------------------
+    //--------------------------------------------Load-------------------------------------------------
+    sf::Texture playerTexture;
+    sf::Sprite playerSprite;
+
+    if(playerTexture.loadFromFile("C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/Assets/MainCharacter/player.png"))
+    {
+        std::cout << "Player Images Loaded!" << std::endl;
+        playerSprite.setTexture(playerTexture);
+    }
+    else
+    {
+        std::cout << "Player Images Failed  to Load!" << std::endl;
+    }
+    //--------------------------------------------Load-------------------------------------------------
+
 
     //--------------------------------------------UPDATE-----------------------------------------------
 
@@ -44,8 +49,7 @@ int main() {
         //clear the window with black color
 
         window.clear(sf::Color::Black);
-        window.draw(octagon);
-        window.draw(triangle);
+        window.draw(playerSprite);
         //draw everything here...
         //window draw(...);
         window.display();
