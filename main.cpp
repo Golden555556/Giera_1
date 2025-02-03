@@ -17,10 +17,15 @@ int main() {
     sf::Texture playerTexture;
     sf::Sprite playerSprite;
 
-    if(playerTexture.loadFromFile("C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/Assets/MainCharacter/player.png"))
+    if(playerTexture.loadFromFile("Assets/MainCharacter/spritesheet.png"))
     {
         std::cout << "Player Images Loaded!" << std::endl;
         playerSprite.setTexture(playerTexture);
+        //X,Y, Width, Height
+        // playerSprite.setTextureRect(sf::IntRect(41, 46, 46, 82));
+    int x = 82;
+        int y = 128;
+        playerSprite.setTextureRect(sf::IntRect(41+x+41, 46, 46, 82));
     }
     else
     {
