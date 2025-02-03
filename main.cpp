@@ -8,9 +8,7 @@ int main() {
     //create the window
     sf::ContextSettings settings;
     settings.antialiasingLevel = 16;
-    sf::RenderWindow window(sf::VideoMode(800,600), "RPG GAME", sf::Style::Default, settings);
-
-
+    sf::RenderWindow window(sf::VideoMode(1920,1080), "RPG GAME", sf::Style::Default, settings);
 
     //--------------------------------------------INTIALIZE--------------------------------------------
     //--------------------------------------------Load-------------------------------------------------
@@ -23,7 +21,7 @@ int main() {
         playerSprite.setTexture(playerTexture);
         //X,Y, Width, Height
         // playerSprite.setTextureRect(sf::IntRect(41, 46, 46, 82));
-    int x = 82;
+        int x = 82;
         int y = 128;
         playerSprite.setTextureRect(sf::IntRect(41+x+41, 46, 46, 82));
     }
@@ -46,6 +44,17 @@ int main() {
             //"close requested" event: we close the window
             if(event.type == sf::Event::Closed)
                 window.close();
+        }
+
+        sf::Vector2 position = playerSprite.getPosition();
+        if(sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
+            playerSprite.setPosition(position - sf::Vector2f(0, 0.5));
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
+            playerSprite.setPosition(position + sf::Vector2f(0,0.5));
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)){
+            playerSprite.setPosition(position - sf::Vector2f(0.5,0));
+        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
+            playerSprite.setPosition(position + sf::Vector2f(0.5,0));
         }
         //--------------------------------------------UPDATE-----------------------------------------------
 
