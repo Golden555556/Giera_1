@@ -2,6 +2,7 @@
 #include "SFML/Graphics.hpp"
 #include "fmt/ranges.h"
 #include "Player.h"
+#include "Enemy.h"
 
 int main() {
     //--------------------------------------------INTIALIZE--------------------------------------------
@@ -16,8 +17,11 @@ int main() {
 
     Player player;
     player.Initialize();
+    Enemy enemy;
+    enemy.Initialize();
     //--------------------------------------------Load-------------------------------------------------
     player.Load();
+    enemy.Load();
     //--------------------------------------------Load-------------------------------------------------
 
     //--------------------------------------------UPDATE-----------------------------------------------
@@ -35,6 +39,7 @@ int main() {
         }
 
         player.Update();
+        enemy.Update();
         //--------------------------------------------UPDATE-----------------------------------------------
 
         //--------------------------------------------DRAW-------------------------------------------------
@@ -43,7 +48,9 @@ int main() {
 
         window.clear(sf::Color::Black);
         player.Draw();
+        enemy.Draw();
         window.draw(player.sprite);
+        window.draw(enemy.sprite);
         //draw everything here...
         //window draw(...);
         window.display();

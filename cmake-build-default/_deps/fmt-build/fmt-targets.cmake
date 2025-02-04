@@ -47,9 +47,10 @@ unset(_cmake_expected_targets)
 
 
 # Create imported target fmt::fmt
-add_library(fmt::fmt STATIC IMPORTED)
+add_library(fmt::fmt SHARED IMPORTED)
 
 set_target_properties(fmt::fmt PROPERTIES
+  INTERFACE_COMPILE_DEFINITIONS "FMT_SHARED"
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/fmt-src/include"
 )
@@ -66,8 +67,8 @@ set_target_properties(fmt::fmt-header-only PROPERTIES
 # Import target "fmt::fmt" for configuration ""
 set_property(TARGET fmt::fmt APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(fmt::fmt PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_NOCONFIG "CXX"
-  IMPORTED_LOCATION_NOCONFIG "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/fmt-build/libfmt.a"
+  IMPORTED_IMPLIB_NOCONFIG "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/fmt-build/libfmt.dll.a"
+  IMPORTED_LOCATION_NOCONFIG "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/bin/libfmt.dll"
   )
 
 # This file does not depend on other imported targets which have

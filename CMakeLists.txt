@@ -24,6 +24,7 @@ FetchContent_MakeAvailable(fmt SFML)
 add_executable(Giera_v1 main.cpp
         main.cpp
         main.cpp
-        Player.cpp)
+        Player.cpp
+        Enemy.cpp)
 target_compile_features(Giera_v1 PRIVATE cxx_std_20)
 target_link_libraries(Giera_v1 PRIVATE sfml-graphics sfml-window sfml-system fmt::fmt)

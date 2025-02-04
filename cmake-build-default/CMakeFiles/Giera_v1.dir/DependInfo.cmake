@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/Enemy.cpp" "CMakeFiles/Giera_v1.dir/Enemy.cpp.obj" "gcc" "CMakeFiles/Giera_v1.dir/Enemy.cpp.obj.d"
+  "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/Player.cpp" "CMakeFiles/Giera_v1.dir/Player.cpp.obj" "gcc" "CMakeFiles/Giera_v1.dir/Player.cpp.obj.d"
   "C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/main.cpp" "CMakeFiles/Giera_v1.dir/main.cpp.obj" "gcc" "CMakeFiles/Giera_v1.dir/main.cpp.obj.d"
   )
 

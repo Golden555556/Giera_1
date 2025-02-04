@@ -48,7 +48,20 @@
 			"destination" : "lib",
 			"paths" : 
 			[
-				"_deps/fmt-build/libfmt.a"
+				"_deps/fmt-build/libfmt.dll.a"
+			],
+			"targetId" : "fmt::@976f4f0bee90b99ecdb6",
+			"targetIndex" : 1,
+			"targetIsImportLibrary" : true,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"bin/libfmt.dll"
 			],
 			"targetId" : "fmt::@976f4f0bee90b99ecdb6",
 			"targetIndex" : 1,

@@ -1,10 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2024.2.2\bin\cmake\win\x64\bin\cmake.exe" -G "MinGW Makefiles" -S C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1 -B C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\cmake-build-default
--- The CXX compiler identification is GNU 13.1.0
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/g++.exe - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
 -- {fmt} version: 11.0.2
 -- Build type: 
 CMake Deprecation Warning at cmake-build-default/_deps/sfml-src/CMakeLists.txt:5 (cmake_minimum_required):
@@ -15,24 +9,6 @@ CMake Deprecation Warning at cmake-build-default/_deps/sfml-src/CMakeLists.txt:5
   CMake that the project does not need compatibility with older versions.
 
 
--- The C compiler identification is GNU 13.1.0
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: C:/Program Files/JetBrains/CLion 2024.2.2/bin/mingw/bin/gcc.exe - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Looking for sys/types.h
--- Looking for sys/types.h - found
--- Looking for stdint.h
--- Looking for stdint.h - found
--- Looking for stddef.h
--- Looking for stddef.h - found
--- Check size of void*
--- Check size of void* - done
--- Found OpenGL: opengl32
--- Looking for dinput.h
--- Looking for dinput.h - found
--- Found OpenAL: C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/extlibs/libs-mingw/x64/libopenal32.a
 CMake Warning (dev) at C:/Program Files/JetBrains/CLion 2024.2.2/bin/cmake/win/x64/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
   The package name passed to `find_package_handle_standard_args` (VORBIS)
   does not match the name of the calling package (Vorbis).  This can lead to
@@ -44,8 +20,6 @@ Call Stack (most recent call first):
   cmake-build-default/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt:70 (sfml_find_package)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
--- Found VORBIS: C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbisenc.a;C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbisfile.a;C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/extlibs/libs-mingw/x64/libvorbis.a;C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/extlibs/libs-mingw/x64/libogg.a
--- Found FLAC: C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/extlibs/libs-mingw/x64/libFLAC.a
--- Configuring done (11.1s)
--- Generating done (0.1s)
+-- Configuring done (1.8s)
+-- Generating done (0.9s)
 -- Build files have been written to: C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default

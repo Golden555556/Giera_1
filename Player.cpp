@@ -8,6 +8,7 @@
 
 void Player::Initialize()
 {
+    // sprite.setPosition(sf::Vector2f(800, 400));
 }
 
 void Player::Load()

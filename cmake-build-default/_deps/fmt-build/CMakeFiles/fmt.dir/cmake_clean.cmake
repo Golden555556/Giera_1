@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
+  "../../bin/libfmt.dll"
+  "../../bin/libfmt.dll.manifest"
+  "../../bin/libfmt.pdb"
   "CMakeFiles/fmt.dir/src/format.cc.obj"
   "CMakeFiles/fmt.dir/src/format.cc.obj.d"
   "CMakeFiles/fmt.dir/src/os.cc.obj"
   "CMakeFiles/fmt.dir/src/os.cc.obj.d"
-  "libfmt.a"
-  "libfmt.pdb"
+  "libfmt.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

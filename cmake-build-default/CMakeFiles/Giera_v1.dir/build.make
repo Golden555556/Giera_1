@@ -83,23 +83,57 @@ CMakeFiles/Giera_v1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Giera_v1.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\main.cpp -o CMakeFiles\Giera_v1.dir\main.cpp.s
 
+CMakeFiles/Giera_v1.dir/Player.cpp.obj: CMakeFiles/Giera_v1.dir/flags.make
+CMakeFiles/Giera_v1.dir/Player.cpp.obj: CMakeFiles/Giera_v1.dir/includes_CXX.rsp
+CMakeFiles/Giera_v1.dir/Player.cpp.obj: C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/Player.cpp
+CMakeFiles/Giera_v1.dir/Player.cpp.obj: CMakeFiles/Giera_v1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\cmake-build-default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Giera_v1.dir/Player.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Giera_v1.dir/Player.cpp.obj -MF CMakeFiles\Giera_v1.dir\Player.cpp.obj.d -o CMakeFiles\Giera_v1.dir\Player.cpp.obj -c C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Player.cpp
+
+CMakeFiles/Giera_v1.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Giera_v1.dir/Player.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Player.cpp > CMakeFiles\Giera_v1.dir\Player.cpp.i
+
+CMakeFiles/Giera_v1.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Giera_v1.dir/Player.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Player.cpp -o CMakeFiles\Giera_v1.dir\Player.cpp.s
+
+CMakeFiles/Giera_v1.dir/Enemy.cpp.obj: CMakeFiles/Giera_v1.dir/flags.make
+CMakeFiles/Giera_v1.dir/Enemy.cpp.obj: CMakeFiles/Giera_v1.dir/includes_CXX.rsp
+CMakeFiles/Giera_v1.dir/Enemy.cpp.obj: C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/Enemy.cpp
+CMakeFiles/Giera_v1.dir/Enemy.cpp.obj: CMakeFiles/Giera_v1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\cmake-build-default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Giera_v1.dir/Enemy.cpp.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Giera_v1.dir/Enemy.cpp.obj -MF CMakeFiles\Giera_v1.dir\Enemy.cpp.obj.d -o CMakeFiles\Giera_v1.dir\Enemy.cpp.obj -c C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Enemy.cpp
+
+CMakeFiles/Giera_v1.dir/Enemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Giera_v1.dir/Enemy.cpp.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Enemy.cpp > CMakeFiles\Giera_v1.dir\Enemy.cpp.i
+
+CMakeFiles/Giera_v1.dir/Enemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Giera_v1.dir/Enemy.cpp.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Enemy.cpp -o CMakeFiles\Giera_v1.dir\Enemy.cpp.s
+
 # Object files for target Giera_v1
 Giera_v1_OBJECTS = \
-"CMakeFiles/Giera_v1.dir/main.cpp.obj"
+"CMakeFiles/Giera_v1.dir/main.cpp.obj" \
+"CMakeFiles/Giera_v1.dir/Player.cpp.obj" \
+"CMakeFiles/Giera_v1.dir/Enemy.cpp.obj"
 
 # External object files for target Giera_v1
 Giera_v1_EXTERNAL_OBJECTS =
 
 bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/main.cpp.obj
+bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/Player.cpp.obj
+bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/Enemy.cpp.obj
 bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/build.make
 bin/Giera_v1.exe: _deps/sfml-build/lib/libsfml-graphics.a
 bin/Giera_v1.exe: _deps/sfml-build/lib/libsfml-window.a
 bin/Giera_v1.exe: _deps/sfml-build/lib/libsfml-system.a
-bin/Giera_v1.exe: _deps/fmt-build/libfmt.a
+bin/Giera_v1.exe: _deps/fmt-build/libfmt.dll.a
 bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/linkLibs.rsp
 bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/objects1.rsp
 bin/Giera_v1.exe: CMakeFiles/Giera_v1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\cmake-build-default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable bin\Giera_v1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\cmake-build-default\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable bin\Giera_v1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Giera_v1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

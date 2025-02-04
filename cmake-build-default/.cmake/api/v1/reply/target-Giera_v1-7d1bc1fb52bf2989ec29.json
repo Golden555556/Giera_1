@@ -29,19 +29,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 23,
+				"line" : 24,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 27,
+				"line" : 30,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 26,
+				"line" : 29,
 				"parent" : 0
 			}
 		]
@@ -53,6 +53,13 @@
 			[
 				{
 					"fragment" : "-std=gnu++20 -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "FMT_SHARED"
 				}
 			],
 			"includes" : 
@@ -79,7 +86,9 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -128,7 +137,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "_deps\\fmt-build\\libfmt.a",
+				"fragment" : "_deps\\fmt-build\\libfmt.dll.a",
 				"role" : "libraries"
 			},
 			{
@@ -151,7 +160,9 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1,
+				2
 			]
 		}
 	],
@@ -161,6 +172,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Enemy.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

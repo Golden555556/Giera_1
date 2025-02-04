@@ -282,4 +282,7 @@ CMakeFiles/Giera_v1.dir/main.cpp.obj: \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstdint \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/stdint.h \
  C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/x86_64-w64-mingw32/include/stdint.h \
- C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring
+ C:/Program\ Files/JetBrains/CLion\ 2024.2.2/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstring \
+ C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Player.h \
+ C:\Users\kryst\CLionProjects\Giera_GitHub\Giera_v1\Enemy.h \
+ C:/Users/kryst/CLionProjects/Giera_GitHub/Giera_v1/cmake-build-default/_deps/sfml-src/include/SFML\Graphics.hpp

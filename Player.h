@@ -14,7 +14,7 @@ private:
     sf::Texture texture;
 public:
     sf::Sprite sprite;
-public:
+
     void Initialize(); //<- called once per App start
     void Load(); //<- called once per App start
     void Update(); //<- once per frame
