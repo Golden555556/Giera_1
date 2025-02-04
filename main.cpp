@@ -1,7 +1,7 @@
 #include <iostream>
-
 #include "SFML/Graphics.hpp"
 #include "fmt/ranges.h"
+#include "Player.h"
 
 int main() {
     //--------------------------------------------INTIALIZE--------------------------------------------
@@ -11,26 +11,14 @@ int main() {
     sf::RenderWindow window(sf::VideoMode(1920,1080), "RPG GAME", sf::Style::Default, settings);
 
     //--------------------------------------------INTIALIZE--------------------------------------------
-    //--------------------------------------------Load-------------------------------------------------
-    sf::Texture playerTexture;
-    sf::Sprite playerSprite;
+    std::vector<sf::RectangleShape> bullets;
+    float bulletSpeed = 0.5f;
 
-    if(playerTexture.loadFromFile("Assets/MainCharacter/spritesheet.png"))
-    {
-        std::cout << "Player Images Loaded!" << std::endl;
-        playerSprite.setTexture(playerTexture);
-        //X,Y, Width, Height
-        // playerSprite.setTextureRect(sf::IntRect(41, 46, 46, 82));
-        int x = 82;
-        int y = 128;
-        playerSprite.setTextureRect(sf::IntRect(41+x+41, 46, 46, 82));
-    }
-    else
-    {
-        std::cout << "Player Images Failed  to Load!" << std::endl;
-    }
+    Player player;
+    player.Initialize();
     //--------------------------------------------Load-------------------------------------------------
-
+    player.Load();
+    //--------------------------------------------Load-------------------------------------------------
 
     //--------------------------------------------UPDATE-----------------------------------------------
 
@@ -46,16 +34,7 @@ int main() {
                 window.close();
         }
 
-        sf::Vector2 position = playerSprite.getPosition();
-        if(sf::Keyboard::isKeyPressed(sf::Keyboard::W)){
-            playerSprite.setPosition(position - sf::Vector2f(0, 0.5));
-        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::S)){
-            playerSprite.setPosition(position + sf::Vector2f(0,0.5));
-        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::A)){
-            playerSprite.setPosition(position - sf::Vector2f(0.5,0));
-        }else if(sf::Keyboard::isKeyPressed(sf::Keyboard::D)){
-            playerSprite.setPosition(position + sf::Vector2f(0.5,0));
-        }
+        player.Update();
         //--------------------------------------------UPDATE-----------------------------------------------
 
         //--------------------------------------------DRAW-------------------------------------------------
@@ -63,7 +42,8 @@ int main() {
         //clear the window with black color
 
         window.clear(sf::Color::Black);
-        window.draw(playerSprite);
+        player.Draw();
+        window.draw(player.sprite);
         //draw everything here...
         //window draw(...);
         window.display();
